@@ -1,0 +1,178 @@
+
+INSERT INTO AGENTE_VENDEDOR (AGENTE_ID, POLIZA_ID, NOMBRE_AGENTE, APELLIDO_AGENTE, FECHA_CONTRATO, LUGAR_CONTRATO)
+ VALUES ('1', '1', 'Maria', 'Mera', '12/05/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('2', '2', 'Aron', 'Ortiz', '12/05/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('3', '3', 'Karen', 'Zambrano', '02/10/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('4', '4', 'Johanna', 'Quijije', '11/07/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('5', '5', 'Maria', 'Mera', '12/05/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('6', '6', 'Aron', 'Ortiz', '12/05/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('7', '7', 'Karen', 'Zambrano', '02/10/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('8', '8', 'Johanna', 'Quijije', '11/07/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('9', '9', 'Maria', 'Mera', '12/05/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('10', '10', 'Aron', 'Ortiz', '12/05/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('11', '11', 'Karen', 'Zambrano', '02/10/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('12', '12', 'Johanna', 'Quijije', '11/07/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('13', '13', 'Maria', 'Mera', '12/05/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('14', '14', 'Aron', 'Ortiz', '12/05/2020', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('15', '15', 'Karen', 'Zambrano', '02/10/2019', 'Manta')
+INSERT INTO AGENTE_VENDEDOR VALUES ('16', '16', 'Johanna', 'Quijije', '11/07/2020', 'Manta')
+
+
+INSERT INTO BENEFICIARIO (BENEFICIARIO_ID, POLIZA_ID, NOMBRE_BENEFICIARIO, 
+APELIIDO_BENEFICIARIO, RELACION_FAMILIARIDAD) 
+VALUES ('1', '1', 'Carlos', 'Dorado', 'Hermano')
+INSERT INTO BENEFICIARIO VALUES ('2','2', 'Miguel', 'Alava', 'Esposo')
+INSERT INTO BENEFICIARIO VALUES ('3', '3', 'Alejandra', 'Santos', 'Hija')
+INSERT INTO BENEFICIARIO VALUES ('4', '4', 'Eva', 'Pin', 'Esposa')
+INSERT INTO BENEFICIARIO VALUES ('5', '5', 'Jose', 'Perez', 'Hijo')
+select * from BENEFICIARIO
+
+
+INSERT INTO CIUDAD
+           (ID_NACIMIENTO, PROVINCIA_NACIMIENTO, CANTON_NACIMIENTO)
+     VALUES ('6', 'Manabi', 'Portoviejo')
+INSERT INTO CIUDAD  VALUES ('7', 'Guayas', 'Guayaquil')
+INSERT INTO CIUDAD  VALUES ('8', 'Loja', 'Loja')
+INSERT INTO CIUDAD  VALUES ('9', 'Pichincha', 'Quito')
+INSERT INTO CIUDAD  VALUES ('10', 'Manabi', 'Portoviejo')
+INSERT INTO CIUDAD  VALUES ('11', 'Manabi', 'Manta')
+INSERT INTO CIUDAD  VALUES ('12', 'Guayas', 'Guayaquil')
+INSERT INTO CIUDAD  VALUES ('13', 'Manabi', 'Jaramijo')
+INSERT INTO CIUDAD  VALUES ('14', 'Los Rios', 'Quevedo')
+INSERT INTO CIUDAD  VALUES ('15', 'Manabi', 'Crucita')
+INSERT INTO CIUDAD  VALUES ('16', 'Manabi', 'Portoviejo')
+
+
+INSERT INTO CLIENTE (ID_CLIENTE,ID_NACIMIENTO,CIU_ID_NACIMIENTO, NOMBRE_CLIENTE, APELLIDOS_CLIENTE, 
+FECHA_NACIMIENTO_CLIENTE, LUGAR_NACIMIENTO_CLIENTE, TELEFONO_CLIENTE, TELEFONO2_CLEINTE, 
+TIPO_SANGRE_CLIENTE, ESTADO_CLIENTE, CORREO_CLIENTE) 
+ VALUES ('1', '1','1', 'Juan', 'Dorado', '12/05/1980 12:34:10', 'Manta', '0987652584', '0995477215', 'A+', 'Activo', 'Juandorado@gmail.com')
+INSERT INTO CLIENTE VALUES ('2', '2','2', 'Olivia', 'Alvarez', '08/10/1960 05:44:00', 'Guayaquil', '0965128545', '09987747545', 
+'O+', 'Activo', 'oliviaalva25@gmail.com')
+INSERT INTO CLIENTE VALUES ('3', '3','3', 'Karla', 'Muentes', '12/09/1957 15:55:54', 'Guayaquil', '0984789878', '0999152175', 
+'A-', 'Activo', 'karlamu254@gmail.com')
+INSERT INTO CLIENTE VALUES ('4', '4','4', 'Manuel', 'Briones', '21/04/1970 02:15:05', 'Manta', '0912256549', '0988782590', 
+'0-', 'Activo', 'manubriones87@gmail.com')
+INSERT INTO CLIENTE VALUES ('5', '5','5', 'Lucas', 'Perez', '02/12/1984 22:04:45', 'Manta', '0996500211', '0962001478', 
+'A+', 'Activo', 'lucasperez@gmail.com')
+INSERT INTO CLIENTE VALUES ('6', '6','6', 'Nohelia', 'Castro', '25/11/1974 08:54:12', 'Portoviejo', '0987456521', 
+'0987325263', 'O+', 'Activo', 'noheliacastro77@gmail.com')
+INSERT INTO CLIENTE VALUES ('7', '7','7', 'Karina', 'Pin', '18/10/1960 04:59:01', 'Guayaquil', '0996532554', 
+'0995588712', 'A-', 'Activo', 'karinapin759@gmail.com')
+INSERT INTO CLIENTE VALUES ('8', '8','8', 'Miguel', 'Castro', '05/11/1964 12:54:47', 'Loja', '0984410258', 
+'0988116645', 'B-', 'Retirado', 'miguelcastro42@gmail.com')
+INSERT INTO CLIENTE VALUES ('9', '9','9', 'Ana', 'Mendez', '14/10/1954 08:45:22', 'Quito', '0994525611', 
+'0993310458', 'AB+', 'Activo', 'ana87mendez@gmail.com')
+INSERT INTO CLIENTE VALUES ('10', '10','10', 'Nathalia', 'Alava', '25/05/1974 04:54:54', 'Portoviejo', '0988452587', 
+'0998744125', 'AB-', 'Retirado', 'nathalialava@gmail.com')
+INSERT INTO CLIENTE VALUES ('11', '11','11', 'Michael', 'Zambrano', '05/11/1974 02:02:11', 'Manta', '0990045785', 
+'0998754201', 'A-', 'Retirado', 'michaelzambrano@gmail.com')
+INSERT INTO CLIENTE VALUES ('12', '12','12', 'Oscar', 'Quijije', '15/01/1964 18:09:12', 'Guayaquil', '0987754484', 
+'0988741526', 'B-', 'Activo', 'oscarquijije94@gmail.com')
+INSERT INTO CLIENTE VALUES ('13', '13','13', 'Nexar', 'Bermello', '15/10/1960 10:04:19', 'Jaramijo', '0998844410', 
+'0989632145', 'B+', 'Retirado', 'nexarbermello@gmail.com')
+INSERT INTO CLIENTE VALUES ('14', '14','14', 'Anastacia', 'Ferreira', '02/01/1971 03:44:22', 'Quevedo', '0966458701', 
+'0997451047', 'AB+', 'Activo', 'anastaciaferre@gmail.com')
+INSERT INTO CLIENTE VALUES ('15', '15','15', 'Jhon', 'Mera', '22/12/1976 08:54:12', 'Crucita', '0999546224', 
+'0987541202', 'AB-', 'Retirado', 'jhonmera14@gmail.com')
+INSERT INTO CLIENTE VALUES ('16', '16','16', 'Jamileth', 'Mora', '05/11/1965 14:45:18', 'Portoviejo', '099587525', 
+'0995456213', 'O-', 'Activo', 'jamileth32mora@gmail.com')
+select * from CLIENTE
+
+
+INSERT INTO DETALLE_FACTURA (FACTURA_DETALLE_ID, 
+NUMERO_FACTURA, POLIZA_ID) 
+VALUES ('1', '1', '1')
+INSERT INTO DETALLE_FACTURA VALUES ('2', '2', '2')
+INSERT INTO DETALLE_FACTURA VALUES ('3', '3', '3')
+INSERT INTO DETALLE_FACTURA VALUES ('4', '4', '4')
+INSERT INTO DETALLE_FACTURA VALUES ('5', '5', '5')
+INSERT INTO DETALLE_FACTURA VALUES ('6', '6', '6')
+INSERT INTO DETALLE_FACTURA VALUES ('7', '7', '7')
+INSERT INTO DETALLE_FACTURA VALUES ('8', '8', '8')
+INSERT INTO DETALLE_FACTURA VALUES ('9', '9', '9')
+INSERT INTO DETALLE_FACTURA VALUES ('10', '10', '10')
+INSERT INTO DETALLE_FACTURA VALUES ('11', '11', '11')
+INSERT INTO DETALLE_FACTURA VALUES ('12', '12', '12')
+INSERT INTO DETALLE_FACTURA VALUES ('13', '13', '13')
+INSERT INTO DETALLE_FACTURA VALUES ('14', '14', '14')
+INSERT INTO DETALLE_FACTURA VALUES ('15', '15', '15')
+INSERT INTO DETALLE_FACTURA VALUES ('16', '16', '16')
+
+INSERT INTO EMPRESA (EMPRESA_ID, EMPRESA_NOMBRE, 
+EMPRESA_DIRECCION, EMPRESA_CORREO) 
+VALUES ('1', 'Aseguradora de Vida', 
+'Los Esteros av.115 calle 26', 'aseguradoravida@gmail.com')
+
+
+INSERT INTO FACTURA (NUMERO_FACTURA, ID_CLIENTE, POLIZA_ID, EMPRESA_ID, FACTURA_FECHA, INSTITUCION_BANCARIA,
+FACTURA_PAGO, FACTURA_SUBTOTAL, FACTURA_TOTAL) 
+VALUES ('1', '1', '1', '1', '12/04/2020 12:15:27', 'B. Pichincha', '230', '27.60', '257.60')
+INSERT INTO FACTURA VALUES ('2', '2', '2', '2',  '01/01/2020 10:50:07', 'B. Pacifico', '320', '38.40', '358.40')
+INSERT INTO FACTURA VALUES ('3', '3', '3', '3',  '11/02/2020 13:09:47', 'B. Pichincha', '310', '37.20', '347.20')
+INSERT INTO FACTURA VALUES ('4', '4', '4', '4', '23/03/2020 12:15:11', 'B. Pichincha', '230', '27.60', '257.60')
+INSERT INTO FACTURA VALUES ('5', '5', '5', '5', '07/04/2021 11:01:27', 'B. Pacifico', '230', '27.60', '257.60')
+INSERT INTO FACTURA VALUES ('6', '6', '6', '6', '14/01/2021 16:15:15','B. Pacifico',  '320', '38.40', '358.40')
+INSERT INTO FACTURA VALUES ('7', '7', '7', '7', '21/02/2021 17:54:17','B. Pacifico',  '320', '38.40', '358.40')
+INSERT INTO FACTURA VALUES ('8', '8', '8', '8', '19/03/2021 09:05:02','B. Pichincha',  '310', '37.20', '347.20')
+INSERT INTO FACTURA VALUES ('9', '9', '9', '9', '01/04/2021 10:15:07','B. Pacifico',  '310', '37.20', '347.20')
+INSERT INTO FACTURA VALUES ('10', '10', '10', '10', '04/05/2021 12:35:51','B. Pichincha',  '320', '38.40', '358.40')
+INSERT INTO FACTURA VALUES ('11', '11', '11', '11', '17/06/2021 12:01:22','B. Pacifico',  '310', '37.20', '347.20')
+INSERT INTO FACTURA VALUES ('12', '12', '12', '12', '12/07/2021 16:11:57','B. Pichincha',  '230', '27.60', '257.60')
+INSERT INTO FACTURA VALUES ('13', '13', '13', '13', '10/08/2020 14:51:20','B. Pichincha', '320', '38.40', '358.40')
+INSERT INTO FACTURA VALUES ('14', '14', '14', '14', '20/04/2021 14:51:20','B. Pacifico', '310', '37.20', '347.20')
+INSERT INTO FACTURA VALUES ('15', '15', '15', '15', '30/12/2021 14:51:20','B. Pacifico', '320', '38.40', '358.40')
+INSERT INTO FACTURA VALUES ('16', '16', '16', '16', '01/06/2020 14:51:20','B. Pichincha', '310', '37.20', '347.20')
+
+
+Insert into POLIZA (POLIZA_ID, POLIZA_INDENMIZACION, POLIZA_FORMA_PAGO,POLIZA_COSTO, SEGURO_RIESGO, SEGURO_AHORRO, SEGURO_RENTA,SEGURO_MIXTO)
+values ('1', '150', 'Mensual', '230','si', 'no', 'no', 'no')
+Insert into POLIZA values ('2', '150', 'Mensual', '230', 'no', 'si', 'no', 'no')
+Insert into POLIZA values ('3', '185', 'Mensual', '320', 'no', 'si', 'no', 'no')
+Insert into POLIZA values ('4', '175', 'Mensual', '310', 'no', 'no', 'si', 'no')
+Insert into POLIZA values ('5', '150', 'Mensual', '230', 'no', 'no', 'no', 'si')
+Insert into POLIZA values ('6', '150', 'Mensual', '230','si', 'no', 'no', 'no')
+Insert into POLIZA values ('7', '285', 'Mensual', '320', 'no', 'si', 'no', 'no')
+Insert into POLIZA values ('8', '150', 'Mensual', '320', 'no', 'si', 'no', 'no')
+Insert into POLIZA values ('9', '175', 'Mensual', '310', 'no', 'no', 'si', 'no')
+Insert into POLIZA values ('10', '175', 'Mensual', '310', 'no', 'no', 'no', 'si')
+Insert into POLIZA values ('11', '185', 'Mensual', '320','si', 'no', 'no', 'no')
+Insert into POLIZA values ('12', '175', 'Mensual', '310', 'no', 'si', 'no', 'no')
+Insert into POLIZA values ('13', '150', 'Mensual', '230', 'no', 'si', 'no', 'no')
+Insert into POLIZA values ('14', '150', 'Mensual', '230', 'no', 'no', 'si', 'no')
+Insert into POLIZA values ('15', '150', 'Mensual', '310', 'no', 'no', 'no', 'si')
+Insert into POLIZA values ('16', '150', 'Mensual', '320', 'no', 'no', 'si', 'no')
+
+insert into RELATIONSHIP_8  (POLIZA_ID, ID_CLIENTE, CEDULA_CLIENTE, FECHA_NACIMIENTO, 
+PAIS_RESIDENCIA, POLIZA_SEGURO)
+values ('1', '1', '1316832547', '11/03/1965', 'Ecuador', 'Seguro Riesgo')
+insert into RELATIONSHIP_8 values ('2', '2', '1345478145', '24/06/1957', 'Ecuador', 
+'Seguro Riesgo')
+insert into RELATIONSHIP_8  values ('3', '3', '1314547882', '11/11/1955', 'Ecuador', 
+'Seguro Ahorro')
+insert into RELATIONSHIP_8  values ('4', '4', '1345874521', '27/10/1952', 'Ecuador', 
+'Seguro Mixto')
+insert into RELATIONSHIP_8  values ('5', '5', '1316844785', '19/01/1965', 'Ecuador', 
+'Seguro Riesgo')
+insert into RELATIONSHIP_8  values ('6', '6', '0987858456', '07/02/1960', 'Ecuador', 
+'Seguro Riesgo')
+insert into RELATIONSHIP_8  values ('7', '7', '0965324875', '19/09/1954', 'Ecuador', 
+'Seguro Mixto')
+insert into RELATIONSHIP_8  values ('8', '8', '1302144788', '21/03/1965', 'Ecuador', 
+'Seguro Renta')
+insert into RELATIONSHIP_8  values ('9', '9', '1312236558', '29/03/1944', 'Ecuador', 
+'Seguro Mixto')
+insert into RELATIONSHIP_8  values ('10', '10', '1125365847', '11/03/1949', 'Ecuador', 
+'Seguro Renta')
+insert into RELATIONSHIP_8  values ('11', '11', '0935645232', '11/11/1959', 'Ecuador', 
+'Seguro Riesgo')
+insert into RELATIONSHIP_8  values ('12', '12', '1301247741', '17/07/1957', 'Ecuador', 
+'Seguro Ahorro')
+insert into RELATIONSHIP_8  values ('13', '13', '1303568742', '10/03/1965', 'Ecuador', 
+'Seguro Renta')
+insert into RELATIONSHIP_8  values ('14', '14', '1331254963', '30/05/1955', 'Ecuador', 
+'Seguro Ahorro')
+insert into RELATIONSHIP_8  values ('15', '15', '0954623512', '21/10/1968', 'Ecuador', 
+'Seguro  Mixto')
+insert into RELATIONSHIP_8  values ('16', '16', '0956652323', '14/03/1955', 'Ecuador', 
+'Seguro Riesgo')
