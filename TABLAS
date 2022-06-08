@@ -1,0 +1,124 @@
+
+/*==============================================================*/
+/* Table: AGENTE_VENDEDOR                                       */
+/*==============================================================*/
+create table AGENTE_VENDEDOR (
+   AGENTE_ID            int                  not null,
+   POLIZA_ID            int                  null,
+   NOMBRE_AGENTE        varchar(30)          null,
+   APELLIDO_AGENTE      varchar(30)          null,
+   FECHA_CONTRATO       datetime             null,
+   LUGAR_CONTRATO       varchar(30)          null,
+   constraint PK_AGENTE_VENDEDOR primary key nonclustered (AGENTE_ID)
+)
+go
+
+/*==============================================================*/
+/* Table: BENEFICIARIO                                          */
+/*==============================================================*/
+create table BENEFICIARIO (
+   BENEFICIARIO_ID      int                  not null,
+   POLIZA_ID            int                  null,
+   NOMBRE_BENEFICIARIO  varchar(30)          null,
+   APELIIDO_BENEFICIARIO varchar(30)          null,
+   RELACION_FAMILIARIDAD varchar(30)          null,
+   constraint PK_BENEFICIARIO primary key nonclustered (BENEFICIARIO_ID)
+)
+go
+
+/*==============================================================*/
+/* Table: CIUDAD                                                */
+/*==============================================================*/
+create table CIUDAD (
+   ID_NACIMIENTO        int                  not null,
+   PROVINCIA_NACIMIENTO varchar(20)          null,
+   CANTON_NACIMIENTO    varchar(20)          null,
+   constraint PK_CIUDAD primary key nonclustered (ID_NACIMIENTO)
+)
+go
+
+/*==============================================================*/
+/* Table: CLIENTE                                               */
+/*==============================================================*/
+create table CLIENTE (
+   ID_CLIENTE           int                  not null,
+   ID_NACIMIENTO        int                  null,
+   CIU_ID_NACIMIENTO    int                  null,
+   NOMBRE_CLIENTE       varchar(15)          null,
+   APELLIDOS_CLIENTE    varchar(15)          null,
+   FECHA_NACIMIENTO_CLIENTE datetime             null,
+   LUGAR_NACIMIENTO_CLIENTE varchar(20)          null,
+   TELEFONO_CLIENTE     varchar(15)          null,
+   TELEFONO2_CLEINTE    varchar(15)          null,
+   TIPO_SANGRE_CLIENTE  varchar(10)          null,
+   ESTADO_CLIENTE       varchar(20)          null,
+   CORREO_CLIENTE       varchar(30)          null,
+   constraint PK_CLIENTE primary key nonclustered (ID_CLIENTE)
+)
+go
+
+/*==============================================================*/
+/* Table: DETALLE_FACTURA                                       */
+/*==============================================================*/
+create table DETALLE_FACTURA (
+   FACTURA_DETALLE_ID   int                  not null,
+   NUMERO_FACTURA       int                  null,
+   POLIZA_ID            int                  null,
+   constraint PK_DETALLE_FACTURA primary key nonclustered (FACTURA_DETALLE_ID)
+)
+go
+
+/*==============================================================*/
+/* Table: EMPRESA                                               */
+/*==============================================================*/
+create table EMPRESA (
+   EMPRESA_ID           int                  not null,
+   EMPRESA_NOMBRE       varchar(30)          null,
+   EMPRESA_DIRECCION    varchar(50)          null,
+   EMPRESA_CORREO       varchar(30)          null,
+   constraint PK_EMPRESA primary key nonclustered (EMPRESA_ID)
+)
+go
+
+/*==============================================================*/
+/* Table: FACTURA                                               */
+/*==============================================================*/
+create table FACTURA (
+   NUMERO_FACTURA       int                  not null,
+   ID_CLIENTE           int                  null,
+   EMPRESA_ID           int                  null,
+   FACTURA_FECHA        datetime             null,
+   INSTITUCION_BANCARIA varchar(15)          null,
+   FACTURA_PAGO         varchar(20)          null,
+   FACTURA_SUBTOTAL     decimal(20)          null,
+   FACTURA_TOTAL        decimal(20)          null,
+   constraint PK_FACTURA primary key nonclustered (NUMERO_FACTURA)
+)
+go
+
+/*==============================================================*/
+/* Table: POLIZA                                                */
+/*==============================================================*/
+create table POLIZA (
+   POLIZA_ID            int                  not null,
+   POLIZA_INDENMIZACION decimal(30)          null,
+   POLIZA_FORMA_PAGO    varchar(30)          null,
+   POLIZA_COSTO         decimal(30)          null,
+   SEGURO_RIESGO        varchar(10)          null,
+   SEGURO_AHORRO        varchar(10)          null,
+   SEGURO_RENTA         varchar(10)          null,
+   SEGURO_MIXTO         varchar(10)          null,
+   constraint PK_POLIZA primary key nonclustered (POLIZA_ID)
+)
+go
+
+/*==============================================================*/
+/* Table: RELATIONSHIP_8                                        */
+/*==============================================================*/
+create table RELATIONSHIP_8 (
+   POLIZA_ID            int                  not null,
+   ID_CLIENTE           int                  not null,
+   constraint PK_RELATIONSHIP_8 primary key nonclustered (POLIZA_ID, ID_CLIENTE)
+)
+go
+
